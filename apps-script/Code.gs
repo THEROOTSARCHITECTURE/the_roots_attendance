@@ -4,7 +4,7 @@
 // ===================== CONFIG =====================
 const SHEET_ID      = '1B33m16hD0E7toH6GoNcNWGuQhyfb1ds03IVaLpo-bV0';
 const SHARED_SECRET = 'roots2026secret';          // same value as VITE_SHARED_SECRET in the React .env
-const TRACKER       = 'Test';               // switch to 'Attendance Tracker' when going live
+const TRACKER       = 'Attendance Tracker'; // tab the app writes to ('Test' for trials)
 const MASTER        = 'Employee Master';
 const ACCESS        = 'App Access';
 const LOG           = 'App Log';
