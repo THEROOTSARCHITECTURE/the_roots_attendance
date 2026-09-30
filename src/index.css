@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@theme {
+  --color-roots-50: #f4f7f2;
+  --color-roots-100: #e3eedd;
+  --color-roots-200: #bfe3b4;
+  --color-roots-600: #3d8a3d;
+  --color-roots-700: #2e6b2e;
+  --color-roots-900: #1c3d1c;
+}
+
+html, body, #root { height: 100%; }
+body {
+  background: var(--color-roots-50);
+  color: #1f2a1f;
+  -webkit-tap-highlight-color: transparent;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
