@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # VITE_* values are compiled into the browser bundle by design, so they are public.
+  # Access is protected by each employee's ID + PIN, checked in Apps Script.
+  SECRETS_SCAN_OMIT_KEYS = "VITE_SHARED_SECRET,VITE_SCRIPT_URL"
+
+# Always fetch a fresh service worker so app updates reach phones quickly
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"
